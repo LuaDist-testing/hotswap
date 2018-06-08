@@ -1,17 +1,17 @@
 -- This file was automatically generated for the LuaDist project.
 
 package = "hotswap"
-version = "0.1-1"
+version = "0.2-1"
 
 -- LuaDist source
 source = {
-  tag = "0.1-1",
+  tag = "0.2-1",
   url = "git://github.com/LuaDist-testing/hotswap.git"
 }
 -- Original source
 -- source = {
 --   url = "git://github.com/saucisson/lua-hotswap",
---   tag = "0.1",
+--   tag = "0.2",
 -- }
 
 description = {
@@ -22,13 +22,15 @@ description = {
 }
 
 dependencies = {
-  "compat52 >= 0",
-  "xxhash   >= v1",
+  "compat53 >= 0",
 }
 
 build = {
   type    = "builtin",
   modules = {
-    ["hotswap"] = "src/hotswap.lua",
+    ["hotswap"     ] = "src/hotswap.lua",
+    ["hotswap.hash"] = "src/hotswap/hash.lua",
+    ["hotswap.ev"  ] = "src/hotswap/ev.lua",
+    ["hotswap.lfs" ] = "src/hotswap/lfs.lua",
   },
 }
