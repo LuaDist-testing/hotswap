@@ -1,7 +1,5 @@
-if _VERSION == "Lua 5.1" then
-  if not package.searchers then
-    require "compat53"
-  end
+if not package.searchers then
+  package.searchers     = {}
   package.searchers [1] = function (name)
     return package.preload [name]
   end
