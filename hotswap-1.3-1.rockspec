@@ -1,17 +1,17 @@
 -- This file was automatically generated for the LuaDist project.
 
 package = "hotswap"
-version = "1.2-2"
+version = "1.3-1"
 
 -- LuaDist source
 source = {
-  tag = "1.2-2",
+  tag = "1.3-1",
   url = "git://github.com/LuaDist-testing/hotswap.git"
 }
 -- Original source
 -- source = {
 --   url = "git://github.com/saucisson/lua-hotswap",
---   tag = "1.2",
+--   tag = "1.3",
 -- }
 
 description = {
